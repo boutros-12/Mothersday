@@ -11,15 +11,19 @@
     padding-top: 60px;
 }
 
+/* Popup content box */
 .popup-content {
     background-color: #fff;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 15px;
 }
 
+/* Close button */
 .close-btn {
     color: #aaa;
     font-size: 28px;
@@ -34,4 +38,39 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Text styling for the message */
+h1 {
+    font-size: 36px;
+    color: #FF69B4;  /* Pink color for a special touch */
+}
+
+/* Styling for the images of flowers and gifts */
+.decorations {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.decoration-item {
+    width: 60px;
+    margin: 10px;
+}
+
+/* Link styling */
+#popupLink {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    padding: 10px 20px;
+    background-color: #FF69B4;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+#popupLink:hover {
+    background-color: #FF1493;
 }
