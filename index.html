@@ -3,35 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Mother's Day</title>
+    <title>For You Mom ❤️</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- A clickable link to trigger the popup -->
-    <a href="#" id="popupLink">Click for a special Mother's Day message!</a>
-
-    <!-- Audio element for background music -->
-    <audio id="backgroundMusic" autoplay loop>
-        <source src="https://cdn.pixabay.com/download/audio/2022/02/22/audio_bf078c85-43d5.mp3" type="audio/mp3">
+    <div class="container">
+        <h1>💖 Yen3ad 3leyke emme 💖</h1>
+        <p>Ykhalilna yeke - Boutros - Sophie</p>
+        <button onclick="playMusic()">Click to Play Music 🎶</button>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-
-    <!-- Popup modal -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" id="closeBtn">&times;</span>
-            <h1>Happy Mother's Day Emme! ❤❤</h1>
-            <p>ykhalilna yeke</p>
-            <p><strong>From Boutros and Sophie</strong></p>
-
-            <!-- Adding some fun decorations (flowers and gifts) -->
-            <div class="decorations">
-                <img src="https://cdn.pixabay.com/photo/2017/02/15/17/57/flower-2061604_960_720.jpg" alt="Flower" class="decoration-item">
-                <img src="https://cdn.pixabay.com/photo/2017/11/06/13/35/gift-2916972_960_720.jpg" alt="Gift" class="decoration-item">
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
