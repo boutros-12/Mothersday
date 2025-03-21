@@ -1,76 +1,54 @@
-/* Style for the popup */
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    font-family: 'Dancing Script', cursive;
 }
 
-/* Popup content box */
-.popup-content {
-    background-color: #fff;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+.container {
     text-align: center;
+    background: rgba(255, 223, 186, 0.8);
+    padding: 30px;
     border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
 }
 
-/* Close button */
-.close-btn {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Text styling for the message */
 h1 {
     font-size: 36px;
-    color: #FF69B4;  /* Pink color for a special touch */
+    color: #b8860b;
+    text-shadow: 2px 2px 4px #000;
 }
 
-/* Styling for the images of flowers and gifts */
-.decorations {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+p {
+    font-size: 24px;
+    color: #8b4513;
+    margin-top: -10px;
 }
 
-.decoration-item {
-    width: 60px;
-    margin: 10px;
-}
-
-/* Link styling */
-#popupLink {
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    color: #000;
+button {
+    background: gold;
+    color: white;
     padding: 10px 20px;
-    background-color: #FF69B4;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-#popupLink:hover {
-    background-color: #FF1493;
+button:hover {
+    background: darkgoldenrod;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
